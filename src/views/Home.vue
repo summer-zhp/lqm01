@@ -211,7 +211,7 @@ onMounted(async () => {
   }).addTo(map)
 
   try {
-    const response = await fetch('/P20-12_27 .json')
+    const response = await fetch(import.meta.env.BASE_URL + 'P20-12_27 .json')
     const geojson = await response.json()
 
     // Parse GeoJSON FeatureCollection
